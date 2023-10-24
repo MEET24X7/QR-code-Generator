@@ -1,6 +1,9 @@
 # QR-code-Generator
 User can enter a text or URL to generate a QR code for it. QR (Quick Response) codes are capable of storing lots of data and users can easily access the information by scanning the QR code.
 
+# REST api: 
+https://goqr.me/api/
+
 
 # USE CASES OF this project in different types of apps:
 
