@@ -21,8 +21,8 @@ User can enter a text or URL to generate a QR code for it. QR (Quick Response) c
 - Install live server in visual studio code OR got to terminal-> choose Run without debugging
 
 # Screenshots of website:
-![Alt Text](![QR_website](https://github.com/MEET24X7/QR-code-Generator/assets/132257961/09cfe80f-9d36-4890-9061-18448c794581)
+(![QR_website](https://github.com/MEET24X7/QR-code-Generator/assets/132257961/09cfe80f-9d36-4890-9061-18448c794581)
 
-##Example of generating QR for given URL:
-![Alt Text](![generated_QR_output](https://github.com/MEET24X7/QR-code-Generator/assets/132257961/c00e43d6-1976-4711-856e-682ff7cafc2c)
+#Example of generating QR for given URL:
+(![generated_QR_output](https://github.com/MEET24X7/QR-code-Generator/assets/132257961/c00e43d6-1976-4711-856e-682ff7cafc2c)
 
