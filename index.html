@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- This line specifies the document type and version of HTML being used. -->
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<!-- This is a comment in HTML. 
+  It does not affect the rendering of the page and is used to provide information about the code. -->
+<html lang="en" dir="ltr">
+<!-- The opening tag for the HTML document. "lang" specifies the language (English) 
+  and "dir" specifies the text direction (left-to-right). -->
+  <head>
+    <meta charset="utf-8"> 
+    <!-- Meta tag specifying the character encoding of the document (UTF-8, which is common for web pages). -->
+    <title>QR Code Generator | CodingNepal</title>
+     <!-- Title of the web page, which is displayed in the browser's title bar or tab. -->
+    <link rel="stylesheet" href="style.css">
+     <!-- Link to an external stylesheet (CSS) file for styling the page. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag for specifying the viewport settings, which affects how the page is displayed on different devices (responsive design). -->
+  </head>
+  <body>
+  <!-- The body of the HTML document, where the visible content is placed. -->
+    <div class="wrapper">
+    <!-- A div element with the class "wrapper" that serves as a container for the page content. -->
+      <header>
+      <!-- The header section of the page, typically containing a title and introductory content. -->
+        <h1>QR Code Generator</h1>
+        <!-- An H1 (top-level heading) element with the text "QR Code Generator." -->
+        <p>Paste a URL or enter text to create QR code</p>
+        <!-- A paragraph element with a description of the page's purpose. -->
+      </header>
+      <div class="form">
+      <!-- A div element with the class "form" that contains input and button elements for user interaction. -->
+        <input type="text" spellcheck="false" placeholder="Enter text or URL">
+        <!-- An input element of type text that allows users to enter text. 
+          The "spellcheck" attribute is set to "false" to disable spell checking. 
+          A placeholder text is provided for user guidance. -->
+        <button>Generate QR Code</button>
+        <!-- A button element with the text "Generate QR Code." -->
+      </div>
+      <div class="qr-code">
+      <!-- A div element with the class "qr-code" that will display the generated QR code. -->
+        <img src="" alt="qr-code">
+        <!-- An image (img) element with an empty source (src) attribute and alternative text (alt)
+           for screen readers. The source URL for the QR code image will be added dynamically using JavaScript. -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- A script element that includes an external JavaScript file ("script.js") 
+      for adding interactivity to the page. -->
+  </body>
+</html>

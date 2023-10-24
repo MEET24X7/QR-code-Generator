@@ -1,0 +1,180 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Importing the "Poppins" font from Google Fonts using the @import rule. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Setting global styles for all elements:
+   - Resetting margin and padding to 0.
+   - Using the border-box model for box sizing.
+   - Setting the default font to 'Poppins' or a sans-serif font. */
+
+body {
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  background: #3498DB;
+  justify-content: center;
+}
+/* Styling for the body element:
+   - Creating a flex container with items aligned center horizontally and vertically.
+   - Setting a background color of #3498DB. */
+
+::selection {
+  color: #fff;
+  background: #3498DB;
+}
+/* Styling for selected text in the document:
+   - Setting the text color to white.
+   - Setting the background color to #3498DB. */
+
+.wrapper {
+  height: 265px;
+  max-width: 410px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* Styling for a container with the class "wrapper":
+   - Setting a fixed height and maximum width.
+   - Setting a white background with rounded corners.
+   - Adding padding and a transition for smooth height changes.
+   - Applying a box shadow for a subtle elevation effect. */
+
+.wrapper.active {
+  height: 530px;
+}
+/* Additional styling for the "wrapper" when it has the "active" class:
+   - Increases the height for an expanded appearance. */
+
+header h1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+/* Styling for an H1 element within the header:
+   - Setting font size and weight. */
+
+header p {
+  margin-top: 5px;
+  color: #575757;
+  font-size: 16px;
+}
+/* Styling for a paragraph element within the header:
+   - Adding top margin and setting text color and font size. */
+
+.wrapper .form {
+  margin: 20px 0 25px;
+}
+/* Styling for a container with class "form":
+   - Adding margins for spacing. */
+
+.form :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+/* Styling for input and button elements within the "form":
+   - Setting width, height, border, and border-radius.
+   - Removing default outlines.
+   - Applying a smooth transition effect. */
+
+.form input {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+/* Styling for input elements within the "form":
+   - Setting font size, padding, and border. */
+
+.form input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+/* Styling for input elements when they are in focus:
+   - Adding a subtle box shadow. */
+
+.form input::placeholder {
+  color: #999;
+}
+/* Styling for input placeholders:
+   - Setting the placeholder text color. */
+
+.form button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498DB;
+}
+/* Styling for button elements within the "form":
+   - Setting text color, cursor, margin, font size, and background color. */
+
+.qr-code {
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+/* Styling for a container with class "qr-code" initially hidden:
+   - Setting opacity to 0 (hidden).
+   - Using flex layout for centering content.
+   - Adding padding, rounded corners, and a border.
+   - Disabling pointer events. */
+
+.wrapper.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+/* Additional styling for the "qr-code" when "wrapper" has the "active" class:
+   - Shows the qr-code by setting opacity to 1.
+   - Enables pointer events.
+   - Applies a transition effect for smooth display. */
+
+.qr-code img {
+  width: 170px;
+}
+/* Styling for the QR code image:
+   - Setting a specific width. */
+
+@media (max-width: 430px) {
+  .wrapper {
+    height: 255px;
+    padding: 16px 20px;
+  }
+  /* Media query for screens with a maximum width of 430px:
+     - Adjusting the "wrapper" height and padding. */
+
+  .wrapper.active {
+    height: 510px;
+  }
+  /* Adjusted height for the "wrapper" with the "active" class within the media query. */
+
+  header p {
+    color: #696969;
+  }
+  /* Adjusting text color for the header paragraph. */
+
+  .form :where(input, button) {
+    height: 52px;
+  }
+  /* Adjusted height for input and button elements. */
+
+  .qr-code img {
+    width: 160px;
+  }
+  /* Adjusted width for the QR code image. */
+}
